@@ -2,7 +2,6 @@ function getAttackDamage(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-<<<<<<< HEAD
 const fightButton = document.querySelector('#fight')
 fightButton.addEventListener('click', attackRound);
 let currentMonster = monster;
@@ -181,17 +180,3 @@ function attackRound() {
 //     fightButton.onclick = attackRound;
 //     fightButton.innerText = 'Fight'
 //   }
-=======
-let attackDamage = getAttackDamage()
-
-function currentHitPoints () {
-    return 100 - attackDamage
-}
-
-currentHit
-
-
-let currentlyAttackingMonster = boss
-
-document.getElementById("fight").addEventListener('click', getAttackDamage());
->>>>>>> fd6cfa4377179bcb11305d83ee194cc13fcc3c3b
