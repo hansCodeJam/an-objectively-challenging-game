@@ -2,7 +2,7 @@ function getAttackDamage(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const fightButton = document.querySelector('#fight')
+   ightButton = document.querySelector('#fight')
 fightButton.addEventListener('click', attackRound);
 let currentMonster = monster;
 
@@ -22,7 +22,7 @@ function attackRound() {
     } else {
       const monsterDamage = getAttackDamage(currentMonster.attackMin, currentMonster.attackMax);
       updateMonsterDamageText(monsterDamage)
-      player.hitPoints -= monsterDamage;
+      player.hitPoints = player.hitPoints - monsterDamage;
       if (player.hitPoints <= 0) {
         updateResult('You died! Game over...');
         reset();
